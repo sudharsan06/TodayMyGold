@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card" >
+
+    <LinearLayout
+        android:id="@+id/lay_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/widget_text2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_gold_bar_64" />
+
+
+
+            <TextView
+                android:id="@+id/tv_price_diff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right|center"
+                android:layout_toRightOf="@id/widget_text"
+                android:padding="4dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/ic_arrow_up"
+                android:text="50+"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/widget_text"
+                android:padding="4dp"
+                android:text="22k Gold /g"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+           <!-- <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"/>-->
+            <TextView
+                android:id="@+id/widget_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+
+                android:text="Rs.5000"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widget_text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/widget_text"
+                android:text="24k Gold /g"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <!--<View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"/>-->
+            <TextView
+                android:id="@+id/tv_price_24k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="Rs.6465"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+        <!-- <TextView
+             android:id="@+id/widget_text4"
+             android:layout_width="100dp"
+             android:layout_height="20dp"
+             android:layout_toRightOf="@id/widget_text"
+             android:background="@color/teal_700"
+             android:textColor="@color/white"
+             android:text="Loading..."
+             android:textStyle="bold"
+             android:textSize="16sp" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_more_details"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/lay_container"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+
+        android:background="@color/teal_700"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:paddingLeft="-8dp"
+        android:paddingRight="-8dp"
+        android:text="More details"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

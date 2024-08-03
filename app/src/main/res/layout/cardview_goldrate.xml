@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_margin="16dp"
+    android:background="@color/teal_700"
+    android:padding="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Layout -->
+        <LinearLayout
+            android:id="@+id/card_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <!-- Spacer view with weight to push the TextView to the end -->
+
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gold_bar_64"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:gravity="center"
+                android:text="+50"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_arrow_up"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <!-- Main Content Layout -->
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_header"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/title_22k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="22K Gold /g"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/value_22k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:text="\u20B9 6465"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/title_24k"
+                android:layout_below="@+id/title_22k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24K Gold /g"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/value_24k"
+                android:layout_below="@+id/title_22k"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 7053"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- Footer Layout -->
+        <!--<LinearLayout
+            android:id="@+id/card_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/footer_button"
+                android:layout_width="match_parent"
+                android:backgroundTint="#909090"
+                android:layout_height="wrap_content"
+                android:text="Detailed view"/>
+        </LinearLayout>-->
+
+    </RelativeLayout>
+</LinearLayout>

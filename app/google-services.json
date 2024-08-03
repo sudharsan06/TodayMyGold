@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850082554690",
+    "project_id": "todaymygold",
+    "storage_bucket": "todaymygold.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850082554690:android:70dda7cbdb0e517c0fdedb",
+        "android_client_info": {
+          "package_name": "com.sample.todaymygold"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDzhQlwJCeNzLv7v4NARj7etmBTEZfW58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
