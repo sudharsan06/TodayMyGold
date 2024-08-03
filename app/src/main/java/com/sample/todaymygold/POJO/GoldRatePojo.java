@@ -10,6 +10,16 @@ public class GoldRatePojo
     private int yesterday22K_gold;
     private int yesterday24K_gold;
 
+    public GoldRatePojo(String date, String state, String city, int _22k_gold_rate, int _24k_gold_rate, int yesterday22K_gold, int yesterday24K_gold) {
+        this.date = date;
+        this.state = state;
+        this.city = city;
+        this._22k_gold_rate = _22k_gold_rate;
+        this._24k_gold_rate = _24k_gold_rate;
+        this.yesterday22K_gold = yesterday22K_gold;
+        this.yesterday24K_gold = yesterday24K_gold;
+    }
+
     public GoldRatePojo() {
     }
 
